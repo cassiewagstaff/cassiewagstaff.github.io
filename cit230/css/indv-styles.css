@@ -1,0 +1,29 @@
+nav{
+	background-color: gold;
+	color: darkred;
+	margin: 10px;
+	margin-right: 600px;
+}
+
+h1{
+	color: mediumaquamarine;
+}
+
+main p{
+	color: hotpink;
+}
+
+ol, ul{
+	display: inline-block;
+	color: yellowgreen;
+	background-color: black;
+}
+
+footer{
+	background-color: pink;
+	color: white;
+}
+
+h2{
+	color: coral;
+}
