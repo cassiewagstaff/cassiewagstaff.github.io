@@ -1,29 +1,140 @@
-nav{
-	background-color: gold;
-	color: darkred;
-	margin: 10px;
-	margin-right: 600px;
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Mate+SC|Sahitya');
+
+html {
+	padding-right: 10%;
+	padding-left: 10%;
 }
 
-h1{
-	color: mediumaquamarine;
+html {
+	box-sizing: border-box;
 }
 
-main p{
-	color: hotpink;
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
 
-ol, ul{
+header img {
+	margin-right: 45%;
+	margin-left: 45%;
+}
+
+nav {
+	text-align: center;
+}
+
+nav ul li {
+	display: inline;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	list-style: none;
+}
+
+h1 {
+	color: #df145a;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+main p {
+	color: #000000;
+}
+
+ol,
+ul {
 	display: inline-block;
-	color: yellowgreen;
-	background-color: black;
 }
 
-footer{
-	background-color: pink;
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: auto;
+	background-color: #d4145a;
+	font-size: .75em;
 	color: white;
+	margin-left: -145px;
+	margin-right: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
 }
 
-h2{
-	color: coral;
+footer p,
+footer address {
+	text-align: center;
+}
+
+h2 {
+	color: black;
+}
+
+main p,
+h1,
+nav {
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+}
+
+/*text*/
+
+h1,
+h2 {
+	font-family: 'Mate SC', serif;
+}
+
+p,
+nav,
+footer {
+	font-family: 'Sahitya', serif;
+}
+
+/*Home*/
+
+.home-content {
+	text-align: center;
+}
+
+/*Portfolio*/
+
+.col-container{
+ 	font-size: 0px;
+}
+
+.col-container > *{
+  font-size: 1rem;
+}
+
+.col {
+      margin: 2%;
+      display: inline-block; 
+      background: gray;
+}
+
+.portfolio-one {
+	width: 27.333%;
+}
+
+.portfolio-two {
+	width: 27.333%;
+}
+
+.portfolio-three {
+	width: 27.333%;
+}
+
+/*Portfolio Pages*/
+
+.photo-one {
+	width: 27.333%;
+}
+
+.photo-two {
+	width: 27.333%;
+}
+
+.photo-three {
+	width: 27.333%;
 }
