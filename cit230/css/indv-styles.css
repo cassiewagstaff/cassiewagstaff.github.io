@@ -70,8 +70,6 @@ h2 {
 	color: black;
 }
 
-}
-
 /*text*/
 
 h1,
@@ -158,4 +156,16 @@ footer {
 
 body {
     background-image: url("../pictures/background.png");
+}
+
+.home-img{
+	text-align: center;
+}
+
+.home-bottom-content{
+	text-align: center;
+}
+
+.frames{
+	text-align: center;
 }
