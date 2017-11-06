@@ -70,12 +70,6 @@ h2 {
 	color: black;
 }
 
-main p,
-h1,
-nav {
-	border-style: solid;
-	border-width: 2px;
-	border-color: grey;
 }
 
 /*text*/
@@ -110,7 +104,6 @@ footer {
 .col {
       margin: 2%;
       display: inline-block; 
-      background: gray;
 }
 
 .portfolio-one {
@@ -137,4 +130,32 @@ footer {
 
 .photo-three {
 	width: 27.333%;
+}
+
+.photo-four {
+	width: 27.333%;
+}
+
+.photo-five {
+	width: 27.333%;
+}
+	
+.photo-six {
+	width: 27.333%;
+}
+
+.photo-seven {
+	width: 27.333%;
+}
+
+.photo-eight {
+	width: 27.333%;
+}
+
+.photo-nine {
+	width: 27.333%;
+}
+
+body {
+    background-image: url("../pictures/background.png");
 }
