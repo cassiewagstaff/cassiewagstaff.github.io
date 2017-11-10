@@ -154,9 +154,6 @@ footer {
 	width: 27.333%;
 }
 
-body {
-    background-image: url("../pictures/background.png");
-}
 
 .home-img{
 	text-align: center;
@@ -168,4 +165,21 @@ body {
 
 .frames{
 	text-align: center;
+}
+
+/*Responsive CSS*/
+
+@media screen and (max-width: 480px){
+	
+	nav ul li {
+	display: list-item;
+	text-align: center;
+}
+	main img{
+		height: 100%;
+		width: 100%;
+	}
+	.col{
+		width: 100%;
+	}
 }
