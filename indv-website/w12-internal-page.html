@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>About Us</title>
+	<link href="../cit230/css/indv-styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+	<header>
+		<img src="../cit230/pictures/logo.png" alt="Cassie Wagstaff Photoprints logo" HEIGHT="150" WIDTH="150" />
+	</header>
+	<nav>
+		<ul>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="pricing.html">Pricing</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="store.html">Store</a></li>
+			<li><a href="cit230-links.html"> CIT230-links</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h1>About Cassie Wagstaff Photoprints</h1>
+		<p>Welcome!
+			<a href="#Meet-the-Owner">Meet the owner</a>, learn about <a href="#The-Company">the company</a>, and see Cassie's <a href="#Goals">goals</a> for it!</p>
+
+
+		<div id="googleMap" style="width:100%;height:400px;"></div>
+
+		<script>
+			function myMap() {
+				var mapProp = {
+					center: new google.maps.LatLng(48.0518, -122.1771),
+					zoom: 13,
+				};
+				var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+				var marker = new google.maps.Marker({
+					position: mapProp,
+					map: map
+				});
+			}
+
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB94QcBa44HcH7aINndrVz4no31YDRiQ4Y&callback=myMap"></script>
+
+
+		<h2 id="Meet-the-Owner">Meet the Owner</h2>
+		<figure ondrop="drop(event)" ondragover="allowDrop(event)"><img src="../cit230/pictures/cassiewagstaff.jpg" alt="Picture of owner" HEIGHT="400" WIDTH="275" draggable="true" ondragstart="drag(event)" id="drag1">
+		</figure>
+		<p>Drag the picture of me down to right under where it says, "courses, Cassie.." for drag and drop.</p>
+		<p>Cassie Wagstaff is our owner. She's a young student at BYU-Idaho studying Visual Communication. She has been interested in photography for most of her life. She got her first camera when she was 12 years old and her first DSLR when she was 18 years old. Between high school yearbook committee and college photography courses, Cassie has learned a lot!</p>
+		<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		<img src="../cit230/pictures/engagement.jpg" alt="Picture of owner and fiance, Jason" Height="400" Width="275" />
+		<p>Cassie's very busy with school, work, designing, and also planning a wedding! Cassie's marrying her best friend, Jason, at the end of December. Stay posted for those wedding pictures!</p>
+
+		<h2 id="The-Company">The Company</h2>
+		<p>Cassie started printing her photographs a year ago. She quickly discovered that clients loved to have their photographs printed for them as well. So between photoshoots and editing, she is also running to the print shop to order and pick up those prints for clients.</p>
+		<p>Cassie prints through WHCC. Check out her pricing {link}. She can print at multiple sizes, which can also be found on the pricing page. WHCC has been a very reliable printing location. Cassie hopes to one day own her own printer and work on everything herself.</p>
+		<p>Most of Cassie's clients are in Rexburg. But she is willing to ship prints to clients outside of Rexburg, with a small shipping fee.</p>
+		<p>Cassie is also willing to take portraiture photography for those who specifically contact her. Please <a href="contact.html">contact</a> her for your next session! Photoprints can be included.</p>
+
+		<h2 id="Goals">Goals</h2>
+		<p>Cassie hopes that this company is something that continues to grow. Because it is a company that she can do from home and there is no need for an actual studio and print shop, this is something she can take with her wherever she goes. Being young is fun and moving around is definitely part of that!</p>
+		<p>Cassie also hopes that her company will be something that people will want. Her prices are great and she wants to work with customers! A dream of hers is to work individually with her customers to help them have the exact photograph and design in their house that they want.</p>
+
+
+		<br><br>(This page will lead to other pages with drop down menus)<br>
+		<p><a href="testimonials.html"> Testimonials</a></p>
+		<p><a href="contact.html"> Contact</a></p>
+		<p><a href="social-media.html"> Social Media</a></p>
+
+
+	</main>
+
+	<hr>
+
+	<footer>
+		<p>Copyright &copy; 2017 Cassie Wagstaff Photoprints</p>
+
+		<address>Rexburg, Idaho</address>
+
+		<p>All images courtesy of <a href="http://www.cassiewagstaff.org" target="_blank">Cassie Wagstaff Photodesign.</a></p>
+	</footer>
+
+	<style>
+		#div2 {
+			float: left;
+			width: 100px;
+			height: 35px;
+			margin: 10px;
+			padding: 10px;
+		}
+
+	</style>
+
+	<script>
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			ev.dataTransfer.setData("text", ev.target.id);
+		}
+
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("text");
+			ev.target.appendChild(document.getElementById(data));
+		}
+
+	</script>
+
+</body>
+
+</html>

@@ -1,1 +1,1 @@
-data = '[{"name": "Rixos The Palm Dubai","location": [25.1212, 55.1535]},{"name": "Shangri-La Hotel","location": [25.2084, 55.2719]}, {"name": "Grand Hyatt","location": [25.2285, 55.3273]}] ';
+data = '[{"name": "Marysville, WA","location": [48.0518, -122.1771]},{"name": "Port Orchard, WA","location": [47.5404, -122.6362]}, {"name": "Seattle, WA","location": [47.6062, -122.3321]}] ';
